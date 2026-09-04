@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — FreqGen</title>
+<meta name="description" content="FreqGen collects nothing. Here's exactly what that means.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #f4f4f6; --surface: #ffffff; --surface-2: #ebebef; --border: #d8d8e0;
+    --text: #17171c; --text-secondary: #55555f; --accent: #b8611a; --accent-soft: rgba(184,97,26,0.09);
+    --ok: #157a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121212; --surface: #1a1a1a; --surface-2: #202020; --border: #2c2c2c;
+      --text: #e8e4de; --text-secondary: #93897c; --accent: #f0a030; --accent-soft: rgba(240,160,48,0.12);
+      --ok: #4fd68c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121212; --surface: #1a1a1a; --surface-2: #202020; --border: #2c2c2c;
+    --text: #e8e4de; --text-secondary: #93897c; --accent: #f0a030; --accent-soft: rgba(240,160,48,0.12);
+    --ok: #4fd68c;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { display: flex; flex-direction: column; gap: 10px; padding-bottom: 32px; margin-bottom: 40px; border-bottom: 1px solid var(--border); }
+  .wordmark { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase; }
+  h1 { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 700; font-size: clamp(32px, 6vw, 44px); letter-spacing: 0.01em; text-transform: uppercase; margin: 0; text-wrap: balance; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; color: var(--text-secondary); letter-spacing: 0.02em; }
+  .meta b { color: var(--text-secondary); font-weight: 500; }
+  nav.pagejump { display: flex; gap: 18px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; margin-top: 6px; }
+  nav.pagejump a { color: var(--text-secondary); }
+  nav.pagejump a:hover { color: var(--accent); }
+  h2 { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
+  section { margin-bottom: 40px; }
+  section > p, section > ul { margin: 0 0 14px; color: var(--text); }
+  section > p:last-child, section > ul:last-child { margin-bottom: 0; }
+  p { max-width: 62ch; }
+  ul { padding-left: 1.2em; max-width: 62ch; }
+  li { margin-bottom: 8px; }
+  li:last-child { margin-bottom: 0; }
+  a { color: var(--accent); text-decoration-color: var(--accent-soft); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent); }
+  strong { color: var(--text); font-weight: 600; }
+  .table { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--surface); }
+  .row { display: grid; grid-template-columns: 1fr 1.3fr 1fr; gap: 16px; padding: 14px 16px; border-bottom: 1px solid var(--border); }
+  .row:last-child { border-bottom: none; }
+  .row.head { background: var(--surface-2); font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-secondary); }
+  .row:not(.head) { font-size: 14.5px; }
+  .row div:first-child { color: var(--text); font-weight: 500; }
+  .row div:nth-child(2) { color: var(--text-secondary); }
+  .tag { display: inline-block; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; padding: 3px 8px; border-radius: 5px; background: var(--accent-soft); color: var(--accent); width: fit-content; }
+  .tag.no-track { background: color-mix(in srgb, var(--ok) 14%, transparent); color: var(--ok); }
+  .callout { border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 8px; padding: 16px 18px; background: var(--surface); font-size: 14.5px; color: var(--text-secondary); }
+  .callout strong { color: var(--text); }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border); font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; color: var(--text-secondary); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  @media (max-width: 520px) {
+    .row { grid-template-columns: 1fr; gap: 4px; }
+    .row.head { display: none; }
+    .row:not(.head) div:first-child { font-weight: 600; }
+    .row:not(.head) div:nth-child(2)::before { content: "→ "; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="wordmark">FreqGen</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span><b>Effective</b> September 3, 2026</span>
+      <span><b>App</b> FreqGen — iOS</span>
+      <span><b>Bundle ID</b> dev.hanoi.freqgen</span>
+    </div>
+    <nav class="pagejump"><a href="support.html">→ Support &amp; FAQ</a></nav>
+  </header>
+
+  <section>
+    <p>FreqGen is an audio signal generator. It has no account, no server, no ads, and no in-app purchases — it plays tones through your device's speaker and does nothing else. This is the short version of that in policy form.</p>
+  </section>
+
+  <section>
+    <h2>What's collected, at a glance</h2>
+    <div class="table">
+      <div class="row head"><div>Data</div><div>Collected by</div><div>Used for</div></div>
+      <div class="row"><div>Anything at all</div><div>Nobody</div><div><span class="tag no-track">Not collected</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>No network access</h2>
+    <p>FreqGen does not connect to the internet. It has no analytics SDK, no ad network, no crash reporter, and no backend of any kind. Every frequency, waveform, and setting you touch is computed and played locally on your device.</p>
+  </section>
+
+  <section>
+    <h2>No accounts, no tracking</h2>
+    <p>There's nothing to sign in to, nothing tied to your Apple ID beyond the App Store purchase record Apple keeps for every free download, and no identifier of any kind used to track you across apps or websites.</p>
+  </section>
+
+  <section>
+    <h2>What stays on your device</h2>
+    <p>FreqGen doesn't persist any settings between launches — every session starts from the same default tone. There is no local database, no UserDefaults, and nothing saved to disk beyond the app binary itself.</p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>FreqGen is listed under the Utilities category and is not directed at children under 13. Since the app collects nothing from anyone, this applies equally regardless of the user's age.</p>
+  </section>
+
+  <section>
+    <div class="callout"><strong>Changes to this policy</strong> — if that ever changes (for example, adding a feature that stores a setting locally), this page will be updated and the "Effective" date above will change accordingly.</div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:julai1433@gmail.com">julai1433@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span>FreqGen</span>
+    <span>dev.hanoi.freqgen</span>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — FreqGen</title>
+<meta name="description" content="Get help with FreqGen: FAQ and contact.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #f4f4f6; --surface: #ffffff; --surface-2: #ebebef; --border: #d8d8e0;
+    --text: #17171c; --text-secondary: #55555f; --accent: #b8611a; --accent-soft: rgba(184,97,26,0.09);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121212; --surface: #1a1a1a; --surface-2: #202020; --border: #2c2c2c;
+      --text: #e8e4de; --text-secondary: #93897c; --accent: #f0a030; --accent-soft: rgba(240,160,48,0.12);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121212; --surface: #1a1a1a; --surface-2: #202020; --border: #2c2c2c;
+    --text: #e8e4de; --text-secondary: #93897c; --accent: #f0a030; --accent-soft: rgba(240,160,48,0.12);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { display: flex; flex-direction: column; gap: 10px; padding-bottom: 32px; margin-bottom: 40px; border-bottom: 1px solid var(--border); }
+  .wordmark { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase; }
+  h1 { font-family: "Big Shoulders Display", "Arial Narrow", sans-serif; font-weight: 700; font-size: clamp(32px, 6vw, 44px); letter-spacing: 0.01em; text-transform: uppercase; margin: 0; text-wrap: balance; }
+  nav.pagejump { display: flex; gap: 18px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; margin-top: 6px; }
+  nav.pagejump a { color: var(--text-secondary); }
+  nav.pagejump a:hover { color: var(--accent); }
+  section { margin-bottom: 40px; }
+  p { max-width: 62ch; margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--accent); text-decoration-color: var(--accent-soft); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--accent); }
+  .faq dt { font-weight: 600; color: var(--text); margin-bottom: 4px; }
+  .faq dd { margin: 0 0 20px; color: var(--text-secondary); max-width: 62ch; }
+  .faq dd:last-child { margin-bottom: 0; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border); font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; color: var(--text-secondary); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="wordmark">FreqGen</div>
+    <h1>Support</h1>
+    <nav class="pagejump"><a href="privacy.html">→ Privacy Policy</a></nav>
+  </header>
+
+  <section>
+    <p>Something not working, or have a question about FreqGen? Reach out — most replies go out within a couple of days.</p>
+    <p><a href="mailto:julai1433@gmail.com?subject=FreqGen%20Support">julai1433@gmail.com</a></p>
+  </section>
+
+  <section>
+    <dl class="faq">
+      <dt>Is FreqGen free?</dt>
+      <dd>Yes, completely — no ads, no in-app purchases, no subscription.</dd>
+
+      <dt>What frequency range does it cover?</dt>
+      <dd>20 Hz to 20 kHz, the full range of human hearing, on a logarithmic knob for fine control at low frequencies. You can also dial in an exact musical note (C0 through B7) instead of a raw frequency.</dd>
+
+      <dt>What waveforms are available?</dt>
+      <dd>Sine, square, triangle, and sawtooth.</dd>
+
+      <dt>What's the Sweep button do?</dt>
+      <dd>Continuously sweeps the frequency across the full 20 Hz–20 kHz range — useful for a quick hearing check or testing speaker response.</dd>
+
+      <dt>I don't hear anything</dt>
+      <dd>Check your device isn't in silent/mute mode and the volume knob in the app isn't turned all the way down. Very low (sub-40 Hz) and very high (above ~17 kHz) tones may be inaudible depending on your speaker and hearing range — that's expected, not a bug.</dd>
+
+      <dt>Does it need an internet connection?</dt>
+      <dd>No. FreqGen works entirely offline.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <span>FreqGen</span>
+    <span>dev.hanoi.freqgen</span>
+  </footer>
+</div>
+</body>
+</html>
